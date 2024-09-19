@@ -1,0 +1,639 @@
+@import 'base.css';
+
+/*****************************/
+.header {
+    background-color: var(--subColor);
+    padding: 20px 0;
+}
+
+.logo {
+    font-family: var(--mainFont);
+    font-weight: 700;
+    font-size: xx-large;
+
+}
+
+.logo span:first-of-type {
+    color: #fff;
+}
+
+.logo span:last-of-type {
+    color: var(--thColor);
+}
+
+.header .button .row {
+    gap: 20px;
+}
+
+.login {
+    background-color: #ffff;
+    padding: 10px;
+    border: 1px solid #ffff;
+    border-radius: 20px;
+    font-family: var(--mainFont);
+    font-size: larger;
+    color: var(--subColor);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.signup {
+    background-color: var(--mainColor);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: larger;
+    color: #ffff;
+    font-family: var(--mainFont);
+    text-align: center;
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width:580px) {
+    .menu {
+        display: block;
+    }
+
+    .button {
+        display: none;
+    }
+
+
+}
+
+/*******************************/
+.benefits {
+    padding: 50px 0;
+    background-color: #5f60684a;
+}
+
+.benefits h3 {
+    font-size: 50px;
+    color: var(--mainColor);
+    text-align: center;
+    font-family: var(--mainFont);
+    font-weight: 550;
+}
+
+.benefits .row {
+    gap: 25px;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.family {
+    width: 25%;
+    background-color: var(--subColor);
+    padding: 23px;
+    text-align: center;
+    border-radius: 25px;
+
+}
+
+.card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card span {
+    font-size: 25px;
+    color: #fff;
+    font-family: var(--subFont);
+}
+
+.card p {
+    font-family: var(--subFont);
+    color: #fff;
+    font-size: 15px;
+}
+
+.family img {
+
+    width: 59px;
+    height: 56px;
+    border-radius: 27px;
+}
+
+@media screen and (max-width:940px) {
+
+    .family {
+        width: 20%;
+        height: 200px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .card span {
+        font-size: 18px;
+
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .family img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+@media screen and (max-width:940px) {
+
+    .family {
+        width: 20%;
+        height: 250px;
+    }
+
+}
+
+
+@media screen and (max-width:705px) {
+
+    .family {
+
+        height: 280px;
+    }
+}
+
+@media screen and (max-width:655px) {
+
+
+    .family {
+        width: 34%;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:585px) {
+    .benefits h3 {
+        font-size: 40px;
+
+    }
+
+
+    .family {
+
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .benefits h3 {
+        font-size: 30px;
+
+    }
+
+    .family {
+
+        height: 200px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .benefits h3 {
+        font-size: 25px;
+
+    }
+}
+
+@media screen and (max-width:360px) {
+    .family {
+        height: 255px;
+    }
+}
+
+/*******************************/
+.about-us {
+    padding: 70px 0;
+    background-color: #5f60684a;
+}
+
+.about-us .title {
+    font-size: 75px;
+    font-family: var(--mainFont);
+    color: var(--subColor);
+}
+
+.decription {
+    width: 50%;
+    font-size: 30px;
+    font-family: var(--mainFont);
+    color: var(--mainColor);
+    font-weight: 450;
+}
+
+.photo {
+    flex-grow: 1;
+    position: relative;
+}
+
+.photo .row {
+    justify-content: center;
+}
+
+.photo img {
+    width: 220px;
+    border-radius: 30px;
+}
+
+.colum {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 73%;
+    top: 15%;
+    gap: 10px;
+}
+
+.colum img {
+    width: 180px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width:1110px) {
+    .colum {
+        left: 78%;
+    }
+
+}
+
+@media screen and (max-width:950px) {
+    .about-us .title {
+        font-size: 75px;
+
+    }
+
+    .decription {
+        font-size: 25px;
+    }
+
+    .photo img {
+        width: 180px;
+
+    }
+
+    .colum img {
+        width: 150px;
+
+    }
+}
+
+@media screen and (max-width:855px) {
+    .about-us .title {
+        font-size: 70px;
+
+    }
+
+    .decription {
+        font-size: 22px;
+    }
+
+    .photo img {
+        width: 160px;
+
+    }
+
+    .colum img {
+        width: 140px;
+
+    }
+}
+
+@media screen and (max-width:790px) {
+
+    .decription {
+        font-size: 20px;
+    }
+
+    .photo img {
+        width: 150px;
+
+    }
+
+    .colum img {
+        width: 130px;
+
+    }
+}
+
+@media screen and (max-width:740px) {
+
+    .decription {
+        font-size: 20px;
+    }
+
+    .photo img {
+        width: 145px;
+
+    }
+
+    .colum img {
+        width: 125px;
+
+    }
+}
+
+@media screen and (max-width:720px) {
+
+
+    .photo img {
+        margin-right: 25px;
+
+    }
+}
+
+@media screen and (max-width:640px) {
+    .about-us .title {
+        font-size: 60px;
+
+    }
+
+    .decription {
+        font-size: 18px;
+    }
+
+
+    .photo img {
+        margin-right: 30px;
+
+    }
+}
+
+@media screen and (max-width:620px) {
+    .photo img {
+        width: 135px;
+
+    }
+
+    .colum img {
+        width: 115px;
+
+    }
+}
+
+@media screen and (max-width:570px) {
+    .photo img {
+        width: 125px;
+
+    }
+
+    .colum img {
+        width: 105px;
+
+    }
+
+    .decription {
+        font-size: 16px;
+    }
+
+    .about-us .title {
+        font-size: 50px;
+
+    }
+}
+
+@media screen and (max-width:525px) {
+    .about-us .row {
+        gap: 20px;
+
+    }
+
+    .decription {
+        width: 100%;
+    }
+
+    .photo {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .colum {
+        left: 55%;
+    }
+
+    .photo img {
+        width: 150px;
+    }
+
+    .colum img {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width:465px) {
+    .photo img {
+        width: 140px;
+    }
+
+    .colum img {
+        width: 115px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .photo img {
+        width: 130px;
+    }
+
+    .colum img {
+        width: 105px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .about-us .title {
+        font-size: 40px;
+    }
+
+    .photo img {
+        width: 110px;
+    }
+
+    .colum img {
+        width: 95px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .photo img {
+        width: 110px;
+    }
+
+    .colum img {
+        width: 80px;
+
+    }
+
+    .decription {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:385px) {
+
+    .photo img {
+        width: 100px;
+    }
+
+    .colum img {
+        width: 80px;
+
+    }
+
+    .decription {
+        font-size: 14px;
+    }
+}
+
+
+/*********************************/
+.popular-destinations {
+    padding: 50px 0;
+}
+
+.popular-destinations h2 {
+    font-size: 40px;
+    font-family: var(--mainFont);
+    color: var(--subColor);
+    font-weight: 550;
+}
+
+.popular-destinations .row {
+    padding: 20px 0;
+}
+
+.popular-destinations img {
+    width: 120px;
+    border-radius: 10px;
+}
+
+.popular-destinations .city {
+    height: 300px;
+    width: 30%;
+    background-color: #5f60684a;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.city .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+
+}
+
+.city .info p {
+
+    color: var(--subColor);
+    font-family: var(--subFont);
+}
+
+.city .info h3 {
+    font-family: var(--subFont);
+    font-size: x-large;
+    color: var(--subColor);
+}
+
+@media screen and (max-width:955px) {
+    .popular-destinations .city {
+        height: 400px;
+
+    }
+}
+
+@media screen and (max-width:775px) {
+    .popular-destinations .city {
+        height: 450px;
+
+    }
+
+    .popular-destinations img {
+        width: 100px;
+
+    }
+
+    .city .info h3 {
+
+        font-size: large;
+
+    }
+}
+
+@media screen and (max-width:625px) {
+    .row {
+        gap: 15px;
+    }
+
+    .popular-destinations .city {
+        width: 100%;
+        height: 250px;
+    }
+
+    .city .info h3 {
+
+        font-size: x-large;
+
+    }
+}
+@media screen and (max-width:500px)
+{
+    .popular-destinations .city{
+        height: 280px;
+    }
+    .popular-destinations h2 {
+        font-size: 30px;
+       
+    }
+}
+@media screen and (max-width:400px)
+{
+    .popular-destinations .city{
+        height: 325px;
+    }
+ 
+}
+
+
+
+/********************************/
+.footer {
+    background-color: var(--subColor);
+    padding: 20px 0;
+
+}
+
+.footer .conection {
+    color: #ffff;
+    font-size: 25px;
+    font-family: var(--mainFont);
+}
+
+@media screen and (max-width:580px) {
+    .footer .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer .conection {
+        width: 100%;
+        text-align: center;
+    }
+
+
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --mainColor :#28A745;
+    --subColor: #007BFF;
+    --thColor : #49D86A;
+    --thFont:"DM Sans", sans-serif;
+    --mainFont: "Montserrat", sans-serif;
+    --subFont:  "Mooli", sans-serif;
+}
+a
+{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container
+{
+    width: calc(100% - 180px);
+    margin: auto;
+}
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
