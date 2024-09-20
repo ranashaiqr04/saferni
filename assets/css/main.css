@@ -64,6 +64,163 @@
 
 }
 
+/********************************/
+.home-page {
+    background-image: url('../img/physecail.png');
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+.item-homepage {
+    position: absolute;
+    top: 65px;
+    left: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.item-homepage h2,
+.item-homepage h3 {
+    font-family: var(--mainFont);
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.item-homepage p {
+    font-size: 20px;
+    color: var(--mainColor);
+    width: 68%;
+    font-family: var(--mainFont);
+    font-weight: 500;
+}
+
+@media screen and (max-width:1400px) {
+
+    .item-homepage h2,
+    .item-homepage h3 {
+
+        font-size: 40px;
+
+    }   
+}
+@media screen and (max-width:1310px) {
+
+    .item-homepage
+    {
+        left: 280px;
+    }
+}
+@media screen and (max-width:1150px) {
+
+    .item-homepage
+    {
+        left: 200px;
+    }
+    .item-homepage h2,
+    .item-homepage h3 {
+
+        font-size: 35px;
+
+    } 
+}
+@media screen and (max-width:1070px) {
+
+    .item-homepage
+    {
+        left: 180px;
+    }
+
+}
+@media screen and (max-width:1024px) {
+
+    .item-homepage
+    {
+        left: 115px;
+    }
+    .item-homepage h2,
+    .item-homepage h3 {
+
+        font-size: 30px;
+
+    } 
+}
+@media screen and (max-width:925px) {
+
+    .item-homepage
+    {
+        left: 65px;
+    }
+}
+@media screen and (max-width:805px) {
+
+
+    .item-homepage
+    {
+        left: 10px;
+    }
+}
+@media screen and (max-width:676px) {
+    .home-page {
+
+ 
+        background-size: auto;
+
+    }
+    .item-homepage h2,
+    .item-homepage h3 {
+
+        font-size: 20px;
+
+    } 
+
+    .item-homepage p {
+        font-size: 17px;
+        width: 48%;
+        font-weight: 400;
+     
+   
+}
+}
+@media screen and (max-width:600px) {
+    .item-homepage
+    {
+       left:16px;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .item-homepage
+    {
+       left: -25px;
+    }
+}
+@media screen and (max-width:414px) {
+    .item-homepage
+    {
+       left: -10px;
+    }
+    .item-homepage p{
+        width: 80%;
+    };
+}
+@media screen and (max-width:414px) {
+    .item-homepage
+    {
+       left: 0px;
+    }
+    .item-homepage p{
+        width: 80%;
+    };
+}
 /*******************************/
 .benefits {
     padding: 50px 0;
@@ -92,13 +249,15 @@
     border-radius: 25px;
 
 }
+
 .family:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: transform 0.3s ease;
-    box-shadow: 10px 10px 15px rgba(40, 176, 35, 0.5); 
-    
+    box-shadow: 10px 10px 15px rgba(40, 176, 35, 0.5);
+
 }
+
 .card {
     padding: 30px;
     display: flex;
@@ -229,6 +388,7 @@
     font-family: var(--mainFont);
     color: var(--subColor);
 }
+
 .about-us .title:hover {
     color: var(--mainColor);
     cursor: pointer;
@@ -241,11 +401,12 @@
     color: var(--mainColor);
     font-weight: 450;
 }
-.decription:hover
-{
+
+.decription:hover {
     color: var(--subColor);
     cursor: pointer;
 }
+
 .photo {
     flex-grow: 1;
     position: relative;
@@ -542,12 +703,13 @@
     border-radius: 5px;
     box-sizing: border-box;
 }
+
 .popular-destinations .city:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: transform 0.3s ease;
-    box-shadow: 10px 10px 15px rgba(42, 77, 159, 0.59); 
-    
+    box-shadow: 10px 10px 15px rgba(42, 77, 159, 0.59);
+
 }
 
 .city .info {
@@ -612,44 +774,52 @@
 
     }
 }
-@media screen and (max-width:500px)
-{
-    .popular-destinations .city{
+
+@media screen and (max-width:500px) {
+    .popular-destinations .city {
         height: 280px;
     }
+
     .popular-destinations h2 {
         font-size: 30px;
-       
+
     }
 }
-@media screen and (max-width:400px)
-{
-    .popular-destinations .city{
+
+@media screen and (max-width:400px) {
+    .popular-destinations .city {
         height: 325px;
     }
- 
+
 }
+
 /*********************************/
-.user-testimonials
-{
+.user-testimonials {
     padding: 50px 0;
 }
-.user-testimonials h2{
+
+
+.user-testimonials h2 {
     font-size: 50px;
     font-family: var(--mainFont);
     color: var(--subColor);
 }
-.testimonial-slider 
-{
+
+.user-testimonials h2:hover {
+
+    color: var(--mainColor);
+}
+
+.testimonial-slider {
     padding: 20px 0;
 }
-.testimonial-slider .row
-{
+
+.testimonial-slider .row {
     gap: 15px;
     justify-content: flex-start;
 }
-.testimonial-slider .testimonial-item
-{
+
+.testimonial-slider .testimonial-item {
     padding: 10px;
     box-sizing: border-box;
     background-color: #5f60684a;
@@ -663,66 +833,68 @@
     gap: 10px;
     flex-wrap: wrap;
 }
+
 .testimonial-slider .testimonial-item:hover {
     cursor: pointer;
-  
+
     transform: scale(1.1);
     transition: transform 0.3s ease;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); 
-    
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+
 }
-.testimonial-item p
-{
+
+.testimonial-item p {
     font-size: 15px;
 }
+
 .testimonial-item p,
-.testimonial-item h4
-{
+.testimonial-item h4 {
     color: var(--subColor);
     font-family: var(--subFont);
 }
 
-@media screen and (max-width:1380px){
-    .testimonial-slider .testimonial-item
-    {
+@media screen and (max-width:1380px) {
+    .testimonial-slider .testimonial-item {
         width: 30%;
     }
 }
 
-@media screen and (max-width:855px){
-    .testimonial-slider .testimonial-item
-    {
+@media screen and (max-width:855px) {
+    .testimonial-slider .testimonial-item {
         width: 42%;
     }
 }
-@media screen and (max-width:705px){
 
-    .user-testimonials h2{
+@media screen and (max-width:705px) {
+
+    .user-testimonials h2 {
         font-size: 40px;
-     
+
     }
 }
-@media screen and (max-width:705px){
 
-    .testimonial-slider .testimonial-item
-    {
+@media screen and (max-width:705px) {
+
+    .testimonial-slider .testimonial-item {
         width: 100%;
     }
-    .user-testimonials h2{
+
+    .user-testimonials h2 {
         font-size: 30px;
-     
+
     }
 }
-@media screen and (max-width:445px){
 
-    .testimonial-slider .testimonial-item
-    {
+@media screen and (max-width:445px) {
+
+    .testimonial-slider .testimonial-item {
         width: 100%;
         height: 150px;
     }
-    .user-testimonials h2{
+
+    .user-testimonials h2 {
         font-size: 20px;
-     
+
     }
 }
 
