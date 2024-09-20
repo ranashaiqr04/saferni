@@ -92,7 +92,13 @@
     border-radius: 25px;
 
 }
-
+.family:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 10px 10px 15px rgba(40, 176, 35, 0.5); 
+    
+}
 .card {
     padding: 30px;
     display: flex;
@@ -223,6 +229,10 @@
     font-family: var(--mainFont);
     color: var(--subColor);
 }
+.about-us .title:hover {
+    color: var(--mainColor);
+    cursor: pointer;
+}
 
 .decription {
     width: 50%;
@@ -231,7 +241,11 @@
     color: var(--mainColor);
     font-weight: 450;
 }
-
+.decription:hover
+{
+    color: var(--subColor);
+    cursor: pointer;
+}
 .photo {
     flex-grow: 1;
     position: relative;
@@ -419,6 +433,7 @@
 
     .colum {
         left: 55%;
+        top: 55px;
     }
 
     .photo img {
@@ -527,6 +542,13 @@
     border-radius: 5px;
     box-sizing: border-box;
 }
+.popular-destinations .city:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 10px 10px 15px rgba(42, 77, 159, 0.59); 
+    
+}
 
 .city .info {
     display: flex;
@@ -607,8 +629,102 @@
     }
  
 }
+/*********************************/
+.user-testimonials
+{
+    padding: 50px 0;
+}
+.user-testimonials h2{
+    font-size: 50px;
+    font-family: var(--mainFont);
+    color: var(--subColor);
+}
+.testimonial-slider 
+{
+    padding: 20px 0;
+}
+.testimonial-slider .row
+{
+    gap: 15px;
+    justify-content: flex-start;
+}
+.testimonial-slider .testimonial-item
+{
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #5f60684a;
+    width: 19%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 8px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.testimonial-slider .testimonial-item:hover {
+    cursor: pointer;
+  
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); 
+    
+}
+.testimonial-item p
+{
+    font-size: 15px;
+}
+.testimonial-item p,
+.testimonial-item h4
+{
+    color: var(--subColor);
+    font-family: var(--subFont);
+}
 
+@media screen and (max-width:1380px){
+    .testimonial-slider .testimonial-item
+    {
+        width: 30%;
+    }
+}
 
+@media screen and (max-width:855px){
+    .testimonial-slider .testimonial-item
+    {
+        width: 42%;
+    }
+}
+@media screen and (max-width:705px){
+
+    .user-testimonials h2{
+        font-size: 40px;
+     
+    }
+}
+@media screen and (max-width:705px){
+
+    .testimonial-slider .testimonial-item
+    {
+        width: 100%;
+    }
+    .user-testimonials h2{
+        font-size: 30px;
+     
+    }
+}
+@media screen and (max-width:445px){
+
+    .testimonial-slider .testimonial-item
+    {
+        width: 100%;
+        height: 150px;
+    }
+    .user-testimonials h2{
+        font-size: 20px;
+     
+    }
+}
 
 /********************************/
 .footer {
